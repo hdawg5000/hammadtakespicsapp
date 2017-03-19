@@ -1,0 +1,19 @@
+<% provide(:title, "Login") %>
+        
+<div id="login_form">
+  <h1 class="page_title">Login</h1>
+  <p>Log in to interact with others, comment on pictures, manage your account and to contact us</p>
+  
+  <%= form_tag(method:'post') do %>
+    <%= label_tag(:email, "Email") %>
+    <%= email_field(:username, :address) %></br>
+    
+    <%= label_tag(:password, "Password") %>
+    <%= password_field_tag(:password) %></br>
+    
+    <%= submit_tag("Login", id:"submit") %>
+  <% end %>
+  <p>Need to register? <span id="redirect_link">
+    <%= link_to 'Create account', signup_url %>
+  </span></div>
+</div>

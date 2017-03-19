@@ -1,0 +1,20 @@
+<% provide(:title, "Contact") %>
+
+<div id="contact_form">
+  <h1 class="page_title">Contact us</h1>
+  <%= form_tag(method: 'post') do %>
+    <%= label_tag(:name, "Name") %>
+    <%= text_field_tag :name %></br>
+        
+    <%= label_tag(:email, "Email") %>
+    <%= email_field :user, :address %></br>
+    
+    <%= label_tag(:subject, "Subject") %>
+    <%= text_field_tag :subject %></br>
+    
+    <%= label_tag(:message, "Message") %>
+    <%= text_area_tag(:message, nil, rows: 15, cols:55) %></br>
+
+    <%= submit_tag "Send", id:"submit" %></br>
+  <% end %>
+</div>
