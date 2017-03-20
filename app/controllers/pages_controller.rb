@@ -19,4 +19,13 @@ class PagesController < ApplicationController
 
   def about
   end
+  
+  def italy
+  end
+  
+  def turkey
+  end
+  
+  def dubai
+  end
 end

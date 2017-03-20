@@ -6,19 +6,19 @@
           <!-- <a href="/"><img id="logo" src="images/logo3.PNG"></a> -->
           <!--          <a class="navbar-brand" href="#">Hammad Takes Pics</a>--></div>
       <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-center">
+        <ul class="nav navbar-nav">
           <li><%= link_to 'Home', root_url, class: "fa fa-home fa-fw" %></li>
-          
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-picture-o" aria-hidden="true"></i>&nbsp; Albums <b class="caret"></b></a>
-              <ul class="dropdown-menu">
+          <li><%= link_to 'Albums', albums_path, class: "fa fa-picture-o" %></li>
+          <!--<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-picture-o" aria-hidden="true"></i>&nbsp; Albums <b class="caret"></b></a>-->
+          <!--    <ul class="dropdown-menu">-->
                   <!--             	<li class="dropdown-header">Admin & Dashboard</li>-->
-                  <li><a href="album/italy">Rome/Venice</a></li>
-                  <li><a href="album/turkey">Istanbul</a></li>
-                  <li><a href="album/dubai">Dubai</a></li>
-                  <li class="divider"></li>
-                  <li><a href="albums">See all</a></li>
-              </ul>
-          </li>
+          <!--        <li><a href="album/italy">Rome/Venice</a></li>-->
+          <!--        <li><a href="album/turkey">Istanbul</a></li>-->
+          <!--        <li><a href="album/dubai">Dubai</a></li>-->
+          <!--        <li class="divider"></li>-->
+          <!--        <li><a href="albums">See all</a></li>-->
+          <!--    </ul>-->
+          <!--</li>-->
           <li><%= link_to 'Videos', videos_path, class: "fa fa-video-camera" %></li>
           <li><%= link_to 'Login', login_path, class: "fa fa-sign-in" %></li>
           <li><%= link_to 'Contact', contact_path, class: "fa fa-paper-plane fa-fw" %></li>

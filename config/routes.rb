@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   get '/signup', to:'pages#signup'
   get '/contact', to:'pages#contact'
   get '/about', to:'pages#about'
+  get '/albums/italy', to:'pages#italy', as: 'italy'
+  get '/albums/turkey', to:'pages#turkey', as: 'turkey'
+  get '/albums/dubai', to:'pages#dubai', as: 'dubai'
 end
