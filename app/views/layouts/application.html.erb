@@ -13,6 +13,10 @@
   <body>
     <%= render 'layouts/header' %>
     <%= yield %>
-    <%= render 'layouts/footer' %>
+    <% if current_page?(controller: "pages", action: "home") || current_page?(controller: "pages", action: "albums") || current_page?(controller: "pages", action: "italy") || current_page?(controller: "pages", action: "videos")%>
+      <%= render 'layouts/footer_home' %>
+    <% else %>
+      <%= render 'layouts/footer' %>
+    <% end %>
   </body>
 </html>
