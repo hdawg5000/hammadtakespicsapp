@@ -33,7 +33,7 @@ body {
 #redirect_link a:hover,
 #redirect_link a:active {
     text-decoration: none;
-    color: #0000EE;
+    color: #000;
 }
 
 body {
@@ -515,4 +515,10 @@ td {
 
 .gogolead {
     width: 200px;
+}
+
+li > img {
+        width: 75%;
+        height: auto;
+        margin: 20px 0 20px 0;
 }
