@@ -4,7 +4,7 @@
   <h1 class="page_title">Login</h1>
   <p>Log in to interact with others, comment on pictures, manage your account and to contact us</p>
   
-  <%= form_tag(method:'post') do %>
+  <%= form_tag(for: 'users', method:'post') do %>
     <%= label_tag(:email, "Email") %>
     <%= email_field(:username, :address) %></br>
     
