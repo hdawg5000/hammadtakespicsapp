@@ -1,27 +1,25 @@
-<% provide(:title, "Sign up") %>
+<% provide(:title, "Sign Up") %>
 
 <div id="register_form">
-  <h1 class="page_title">Create Account</h1>
-  <p>Create an account to interact with others, comment on pictures and to contact us</p>
+  <h1 class="page_title">Sign Up</h1>
+  <p>Create an account to interact with others and to comment on pictures</p>
   
   <%= form_for(@user, url: signup_path) do |f| %>
     <%= render 'shared/error_messages' %>
     
-    <%= f.label :name %>
-    <%= f.text_field :name, class: 'form-control' %></br>
+    <%= f.text_field :name, placeholder: "Name", class: 'form-control' %></br>
     
-    <%= f.label :email %>
-    <%= f.email_field :email, class: 'form-control' %></br>
+    <%= f.email_field :email, placeholder: "Email", class: 'form-control' %></br>
     
-    <%= f.label :password %>
-    <%= f.password_field :password, class: 'form-control' %></br>
+    <%= f.password_field :password, placeholder: "Password", class: 'form-control' %></br>
     
-    <%= f.label :password_confirmation, "Confirmation" %>
-    <%= f.password_field :password_confirmation, class: 'form-control' %></br>
+    <%= f.password_field :password_confirmation, placeholder: "Confirm password", class: 'form-control' %></br>
     
-    <%= submit_tag("Register", id:"submit") %></br>
+    <%= submit_tag("Create Account", id:"submit") %></br>
   <% end %>
-  <p>Already registered? <span id="redirect_link">
-    <%= link_to 'Login here', login_path %>
-  </span></form></div>
+  <div class="info">
+    <p id="info-para">Already registered? <span id="redirect_link">
+    <%= link_to 'Login', login_path %>
+    </span>  
+  </div>
 </div>

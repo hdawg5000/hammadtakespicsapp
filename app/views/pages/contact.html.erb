@@ -1,20 +1,16 @@
 <% provide(:title, "Contact") %>
 
 <div id="contact_form">
-  <h1 class="page_title">Contact us</h1>
-  <%= form_tag('/contact', method: 'post') do %>
-    <%= label_tag(:name, "Name") %>
-    <%= text_field_tag :name %></br>
+  <h1 class="page_title">Let's Talk</h1>
+  <%= form_for(:user) do |f| %>
+    <%= f.text_field :name, placeholder: "Name", class: 'form-control', required: true %></br>
         
-    <%= label_tag(:email, "Email") %>
-    <%= email_field :user, :address %></br>
+    <%= f.email_field :email, placeholder: "Email", class: 'form-control', required: true %></br>
     
-    <%= label_tag(:subject, "Subject") %>
-    <%= text_field_tag :subject %></br>
+    <%= f.text_field :subject, placeholder: "Subject", class: 'form-control', required: true %></br>
     
-    <%= label_tag(:message, "Message") %>
-    <%= text_area_tag(:message, nil, rows: 15, cols:55) %></br>
+    <%= text_area :message, nil, rows: 15, cols:55, placeholder: "Message", class: "form-control", required: true %></br>
 
-    <%= submit_tag "Send", id:"submit" %></br>
+    <%= f.submit "Send", id:"submit" %></br>
   <% end %>
 </div>
