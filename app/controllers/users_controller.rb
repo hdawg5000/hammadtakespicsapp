@@ -13,7 +13,6 @@ class UsersController < ApplicationController
     email = params[:address]
     subject = params[:subject]
     UserMailer.contact_form_email(name, email, subject).deliver
-    redirect_to root_path
   end
   
   def create

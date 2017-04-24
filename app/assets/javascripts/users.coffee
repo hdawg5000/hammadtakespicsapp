@@ -3,6 +3,12 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $ ->
   $('#submit').on 'click', ->
-    this.attr('disabled', 'disabled');
+    @attr 'disabled', 'disabled'
+    $.ajax
+      type: 'post'
+      url: '/contact'
+      success: ->
+        console.log 'success'
+        return
     return
   return
