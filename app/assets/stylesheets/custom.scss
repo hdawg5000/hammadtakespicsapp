@@ -171,7 +171,6 @@ img > td > tr > #album_main {
 }
 
 #submit {
-    /*    border-radius: 50px;*/
     background-color: dodgerblue;
     color: white;
     padding: 10px 20px 10px 20px;
@@ -180,7 +179,7 @@ img > td > tr > #album_main {
     border: none;
 }
 
-#submit:hover {
+#submit:disabled {
     background-color: skyblue;
 }
 
