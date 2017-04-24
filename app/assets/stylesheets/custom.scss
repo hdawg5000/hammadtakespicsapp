@@ -39,7 +39,7 @@ body {
 #redirect_link a:hover,
 #redirect_link a:active {
     text-decoration: none;
-    color: #000;
+    color: #6da5ff;
 }
 
 body {
@@ -60,6 +60,15 @@ body {
 .navbar-default .navbar-nav > li > a {
     color: #fff;
     font-size: 22px;
+    font-weight: bold;
+}
+
+#nav-color li > a{
+    color: #000;
+}
+
+.navbar-text > a:hover {
+    text-decoration: none;
 }
 
 li a {
@@ -88,49 +97,68 @@ li a {
     margin-right: 18px;
 }
 
-/*
-.nav li a:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.6);
-}
-*/
-
 #login_form,
 #register_form,
 #contact_form,
 #user_information {
-    background-color: #e6f9ff;
-    padding: 20px;
-    margin: 125px auto;
-    border-radius: 50px;
-    width: 50%;
-    min-width: 50%;
+    background-color: #fff;
+    padding: 25px;
+    margin: 200px auto;
+    -webkit-box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
+    -moz-box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
+    box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
     height: auto;
     text-align: center;
+    max-width: 650px;
+}
+
+#contact_form {
+    max-width: 725px;
+}
+
+#login_form > p, #register_form > p {
+    width: 70%;
+    display: inline-block;
 }
 
 #about_me {
-    background-color: #e6f9ff;
-    padding: 20px;
-    margin: 125px auto;
-    border-radius: 50px;
-    width: 50%;
-    min-width: 50%;
+    background-color: #fff;
+    padding: 25px;
+    margin: 200px auto;
+    -webkit-box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
+    -moz-box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
+    box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
+    max-width: 50%;
     height: auto;
     text-align: center;
 }
 
 #album_main {
-    background-color: #e6f9ff;
+    background-color: #fff;
     padding: 20px;
     margin: 50px auto;
     margin-top: 100px;
-    border-radius: 50px;
+    -webkit-box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
+    -moz-box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
+    box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
+    max-width: 50%;
     width: 95%;
     min-width: 50%;
     height: auto;
     text-align: center;
+}
+
+.info {
+    margin-top: 20px;
+    height: 1px;
+    width: 50%;
+    border: none;
+    display: inline-block;
+    background: #e0e0e0;
+}
+
+#info-para {
+    margin-top: 20px;
 }
 
 img > td > tr > #album_main {
@@ -307,7 +335,7 @@ a {
     list-style: none;
 }
 
-input {
+input, .form-control {
     width: 70%;
     padding: 12px;
     margin: 10px;
@@ -315,6 +343,8 @@ input {
     font-size: 16px;
     display: inline-block;
     border: 1px solid #e0e0e0;
+    height: 48px;
+    resize: none;
 }
 
 textarea {
@@ -327,7 +357,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-    border: 2px solid #b3e0ff;
+    border: 1px solid #b3e0ff;
     outline: none;
     font-size: 16px;
 }
@@ -358,6 +388,10 @@ td {
 .g-signin2 {
     text-align: center;
     margin: 0px auto;
+}
+
+.carousel-caption > h2, p {
+    font-weight: bold;
 }
 
 
@@ -491,11 +525,6 @@ td {
 
 #yt_video_title {
     margin: 50px 0 20px 0;
-    font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
-}
-
-.videos_main_title {
-    font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
 }
 
 @media (min-width: 750px) {
@@ -509,6 +538,48 @@ td {
     .yt-video iframe {
         width: 480px;
         height: 360px;
+    }
+    
+    #login_form,
+    #register_form,
+    #contact_form,
+    #user_information {
+        background-color: #fff;
+        padding: 20px;
+        margin: 125px auto;
+        -webkit-box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
+        -moz-box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
+        box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
+        width: 90%;
+        text-align: center;
+        min-width: 600px;
+    }
+    
+    input, .form-control {
+        width: 90%;
+        padding: 12px;
+        margin: 10px;
+        box-sizing: padding-box;
+        font-size: 26px;
+        display: inline-block;
+        border: 1px solid #e0e0e0;
+        height: 48px;
+        resize: none;
+    }
+    
+    textarea {
+        padding: 12px;
+        margin: 10px;
+        box-sizing: padding-box;
+        font-size: 26px;
+        display: inline;
+    }
+    
+    input:focus,
+    textarea:focus {
+        border: 1px solid #b3e0ff;
+        outline: none;
+        font-size: 16px;
     }
 }
 
