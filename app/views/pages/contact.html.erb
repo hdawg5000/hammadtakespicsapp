@@ -2,7 +2,7 @@
 
 <div id="contact_form">
   <h1 class="page_title">Contact us</h1>
-  <%= form_tag(method: 'post') do %>
+  <%= form_tag('/contact', method: 'post') do %>
     <%= label_tag(:name, "Name") %>
     <%= text_field_tag :name %></br>
         

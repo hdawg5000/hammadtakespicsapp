@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   post '/login', to:'sessions#create'
   delete '/logout', to:'sessions#destroy'
   get '/contact', to:'pages#contact'
+  post '/contact', to: 'users#contact_form_email'
   get '/about', to:'pages#about'
   get '/albums/italy', to:'pages#italy', as: 'italy'
   get '/albums/turkey', to:'pages#turkey', as: 'turkey'

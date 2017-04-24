@@ -8,6 +8,14 @@ class UsersController < ApplicationController
     @user = User.new
   end
   
+  def contact_form_email
+    name = params[:name]
+    email = params[:address]
+    subject = params[:subject]
+    UserMailer.contact_form_email(name, email, subject).deliver
+    redirect_to root_path
+  end
+  
   def create
     @user = User.new(user_params)
     if @user.save
