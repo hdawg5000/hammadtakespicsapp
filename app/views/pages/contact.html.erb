@@ -3,13 +3,13 @@
 <div id="contact_form">
   <h1 class="page_title">Let's Talk</h1>
   <%= form_for(:user) do |f| %>
-    <%= f.text_field :name, placeholder: "Name", class: 'form-control' %></br>
+    <%= f.text_field :name, placeholder: "Name", class: 'form-control', required: true %></br>
         
-    <%= f.email_field :email, placeholder: "Email", class: 'form-control' %></br>
+    <%= f.email_field :email, placeholder: "Email", class: 'form-control', required: true %></br>
     
-    <%= f.text_field :subject, placeholder: "Subject", class: 'form-control' %></br>
+    <%= f.text_field :subject, placeholder: "Subject", class: 'form-control', required: true %></br>
     
-    <%= text_area_tag :message, nil, rows: 15, cols:55, placeholder: "Message", class: "form-control" %></br>
+    <%= text_area_tag :message, nil, rows: 15, cols:55, placeholder: "Message", class: "form-control", required: true %></br>
 
     <%= submit_tag "Send", id:"submit" %></br>
   <% end %>

@@ -123,25 +123,29 @@ li a {
 
 #about_me {
     background-color: #fff;
-    padding: 25px;
+    padding: 50px;
     margin: 200px auto;
     -webkit-box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
     -moz-box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
     box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
-    max-width: 50%;
+    min-width: 900px;
+    max-width: 900px;
     height: auto;
     text-align: center;
 }
 
+#about_me > p {
+    padding-top: 10px;
+    font-size: 26px;
+    line-height: 150%;
+    text-align: left;
+}
+
 #album_main {
     background-color: #fff;
-    padding: 20px;
-    margin: 50px auto;
+    padding: 25px;
+    margin: 200px auto;
     margin-top: 100px;
-    -webkit-box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
-    -moz-box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
-    box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
-    max-width: 50%;
     width: 95%;
     min-width: 50%;
     height: auto;
@@ -200,11 +204,12 @@ img > td > tr > #album_main {
     color: limegreen;
 }
 
-#logo img {
-    max-width: 60%;
-    max-height: 60%;
-    min-width: 60%;
-    min-height: 60%;
+#float img {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    float: right;
+    padding: 10px 20px 20px 20px;
 }
 
 #ad {
@@ -225,13 +230,6 @@ img > td > tr > #album_main {
     left: 0px;
     position: relative;
 }
-
-
-/*
-.image {
-    margin-top: 6vh;
-}
-*/
 
 #image_slider {
     height: auto;
@@ -425,7 +423,7 @@ td {
 }
 
 .img2 {
-    background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.4)), url("https://lh3.googleusercontent.com/6PExeeTNG8VT0rKtm0cIhZD9HXX1q4-njtchNA1AWBrBwoP2ODEpxsTazfCCGWoUpi9it5QRwUWI6U8JhDBh5oKreX0rzygvsNu8p157RYEaIMmg6V87DL-3EpN5iyJUoiR-FC-Tyui8xBOKz0ROob1bvzzxAeNkwQig0x5uQKQs91GeZKDSCb7-UzsAXvhnSQ2XdBFdnhoYqvxFceaIxpcEQAG2bwBXCfd0Pqg0tRg7I622D48JEdmcwRYpSQCFKX2zsVMTpAD31BDEfbxDUpxYHmECtxamsMIr6Tmh_QK9FAXTiEsI5dqpT-urgf3lZtnrAsPOLm8-Ou3m8sILPpGR5KIZCZ9jrhW6yZRT6T3vuRD-P9bCbV5-LjoAHzNWISn3jSNsz6KiCqMPoUii516_1K2sru4ObNcZB5yr3a3Er5YWdjBG23m61HE-FWYcUmHXZes6guCcBPi2FYt1uGCfYyp36z0CU6bHSfT8j0jvZ7HAZi9p2TKGHV0qYeCa_T5qE7a0kGNF8jfDfAgrqpxdpcwRD88a2YPMGYTi-xosEbqdoPO1C7uhJgiXizX5c6jWT5B8kZGJ8a2SnU86TZcyjWULojqo=w1086-h724-no") no-repeat center center fixed;
+    background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.4)), url("https://lh3.googleusercontent.com/Xauu8JjMVjKUmKnq_RdElPKTTW_2nArTwCIQqq8eTCba6cuAVlXbCI0yr9bV-3b35z8kSTuem78citulNm6tcawKeDPsIWfl1oY5chxtLY8ztDtPqyzVmToBZ4ktCU11meVwX-vrLxyZsb761rmjjuzB-SbbrPrq4jg-KYgPRHMoNUG6VfIMxo5NhPn2-4FzxGvw02puM-jj5Hj81kujp8Lq9d2Bu1JTz7BDM8u8_vLklxRPsMfF9jE4IdNDDZgp0vpmcbhPBGrRNHZwYysFKTq0xMi05hiCe25RHU0m8bvs-IzP90VnNsVJBiEwV9NKCKbxmmvve5qHAxeaPGhNfmKxPKtgDJxN_Aj9vjEYhTaAYmokowbcN2CEXHw2nCWnfsBXtznN-MbUYyHbZJYftHUmN_GxGxs2d215M_Cxx63DND6t_t02vwLcCUupo_94vtCvR_6ySq2RQj76ojNpMcYHOFx6AdpR5e0PUAuVPn-mgY4hvZFUqkkaEFwRmmAKEERXyvdf2_TJpTHTqJIGY0kC0x8sJTOB-RARIdtG5Q7MHSCi8MRyMPFQ7Juwav89EbnG1GrQa1I2PNBdzys-Bfew2LB5ABX-WBwtoO96l83jJHsVuIae=w1910-h1274-no") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -527,10 +525,31 @@ td {
     margin: 50px 0 20px 0;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 750px) and (max-width: 1000px) {
     .yt-video iframe {
         width: 640px;
         height: 480px;
+    }
+    
+    #about_me {
+        background-color: #fff;
+        padding: 50px;
+        margin: 170px auto;
+        -webkit-box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
+        -moz-box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
+        box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
+        min-width: 90%;
+        max-width: 90%;
+        height: auto;
+        text-align: center;
+    }
+    
+    #float img {
+        display: inline-block;
+        width: 50%;
+        height: auto;
+        float: none;
+        padding: 0 20px 20px 20px;
     }
 }
 
@@ -580,6 +599,27 @@ td {
         border: 1px solid #b3e0ff;
         outline: none;
         font-size: 16px;
+    }
+    
+    #about_me {
+        background-color: #fff;
+        padding: 25px;
+        margin: 170px auto;
+        -webkit-box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
+        -moz-box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
+        box-shadow: 10px 10px 47px 0px rgba(184,184,184,1);
+        min-width: 90%;
+        max-width: 90%;
+        height: auto;
+        text-align: center;
+    }
+    
+    #float img {
+        display: inline-block;
+        width: 50%;
+        height: auto;
+        float: none;
+        padding: 0 20px 20px 20px;
     }
 }
 
