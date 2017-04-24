@@ -525,7 +525,7 @@ td {
     margin: 50px 0 20px 0;
 }
 
-@media (min-width: 750px) and (max-width: 1000px) {
+@media (min-width: 740px) and (max-width: 1000px) {
     .yt-video iframe {
         width: 640px;
         height: 480px;
@@ -546,14 +546,25 @@ td {
     
     #float img {
         display: inline-block;
-        width: 50%;
+        width: 70%;
         height: auto;
         float: none;
         padding: 0 20px 20px 20px;
     }
+    
+    #about_me > p {
+        padding-top: 10px;
+        font-size: 38px;
+        line-height: 150%;
+        text-align: left;
+    }
+    
+    #about_me > h1 {
+        font-size: 71px;
+    }
 }
 
-@media (min-width: 431px) and (max-width: 749px) {
+@media (min-width: 431px) and (max-width: 739px) {
     .yt-video iframe {
         width: 480px;
         height: 360px;
