@@ -9,8 +9,8 @@
     
     <%= f.text_field :subject, placeholder: "Subject", class: 'form-control', required: true %></br>
     
-    <%= text_area_tag :message, nil, rows: 15, cols:55, placeholder: "Message", class: "form-control", required: true %></br>
+    <%= text_area :message, nil, rows: 15, cols:55, placeholder: "Message", class: "form-control", required: true %></br>
 
-    <%= submit_tag "Send", id:"submit" %></br>
+    <%= f.submit "Send", id:"submit" %></br>
   <% end %>
 </div>
