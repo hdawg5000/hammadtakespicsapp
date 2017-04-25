@@ -13,6 +13,7 @@ class UsersController < ApplicationController
     email = params[:address]
     subject = params[:subject]
     UserMailer.contact_form_email(name, email, subject).deliver
+    render html: "Success!"
   end
   
   def create
