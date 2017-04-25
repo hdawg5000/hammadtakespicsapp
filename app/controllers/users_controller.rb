@@ -9,9 +9,9 @@ class UsersController < ApplicationController
   end
   
   def contact_form_email
-    name = params[:name]
-    email = params[:address]
-    subject = params[:subject]
+    name = params[:user][:name]
+    email = params[:user][:email]
+    subject = params[:user][:subject]
     UserMailer.contact_form_email(name, email, subject).deliver
     render html: "Success!"
   end
