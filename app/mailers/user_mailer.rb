@@ -6,7 +6,7 @@ class UserMailer < ApplicationMailer
     @email = email
     @subject = subject
     @body = body
-    if (body == null)
+    if @body.nil?
       mail(to: @email, subject: "Hammad Takes Pics: Message Received", content_type: "text/html")
     else
       mail(to: "saycheese@hammadtakespics.com", subject: "Message Received From #{@name}", content_type: "text/html",
