@@ -24,5 +24,11 @@ class PagesController < ApplicationController
   end
   
   def dubai
+    @doc = Nokogiri::XML(File.open("app/assets/xml_doc.xml"))
+    @entries = @doc.css("entry content")
+    @pic_urls = []
+    @entries.each do |x| 
+      @pic_urls.push(x["src"]) 
+    end
   end
 end
