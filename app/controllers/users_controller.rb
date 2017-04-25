@@ -12,8 +12,9 @@ class UsersController < ApplicationController
     name = params[:user][:name]
     email = params[:user][:email]
     subject = params[:user][:subject]
+    body = params[:message]
     UserMailer.contact_form_email(name, email, subject).deliver
-    UserMailer.contact_form_email(name, "saycheese@hammadtakespics.com", subject).deliver
+    UserMailer.contact_form_email(name, "saycheese@hammadtakespics.com", subject, body).deliver
     render html: "Success!"
   end
   
