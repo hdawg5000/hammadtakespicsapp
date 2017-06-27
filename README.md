@@ -1,17 +1,19 @@
-# Hammad Takes Pics
+# Hammad Takes Pics App
 
-This is a personal website where I display my photography built on the Ruby on Rails framework.
+A personal website I am developing to display my photography using the Ruby on Rails framework.
 
-https://fierce-taiga-62976.herokuapp.com/
+[Link to my site](https://fierce-taiga-62976.herokuapp.com/)
 
-Things implemented:
+Features implemented:
 
 * Image slider (bootstrap)
-
-Things to implement:
 
 * Login/signup
 
 * Contact page
+
+* Dynamic rendering of images 
+
+What I'm working on:
 
 * Improve UX/Design
