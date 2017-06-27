@@ -1,0 +1,17 @@
+<% provide(:title, "Dubai") %>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.21/js/lightgallery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<h1 id="album_main_title">Dubai, UAE</h1>
+<h2><span id="redirect_link">
+  <%= link_to '<< Go Back', albums_path %>
+</span></h2>
+<div class="row">
+  <div class="large-12 columns">
+    <ul class="small-block-grid-2 medium-block-grid-3 piks" id="lightgallery">
+      <%= @pic_urls.each do |x| %>
+        <li><img src="<%= x %>"></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
